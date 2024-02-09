@@ -4,7 +4,7 @@ export default function TaskList({ tasks, onDelete, onUpdate }) {
 
 
   return (
-    <div className="grid grid-flow-row grid-cols-3 gap-3 m-5 ">
+    <div className="max-w-full flex flex-row flex-wrap gap-3 m-5 ml-40 mr-40 justify-center content-center ">
       {tasks.map((e) => {
         return (<TaskShow task={e} onDelete={onDelete} onUpdate={onUpdate}/>)
       })}
